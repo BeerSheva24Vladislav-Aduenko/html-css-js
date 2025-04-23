@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="trafficLight trafficLight-red"></div>
-    <div class="trafficLight trafficLight-gray"></div>
-    <div class="trafficLight trafficLight-gray"></div>
+    <p class="number">
+      <span class="number">10</span>
+      <sup class="power">2</sup>
+      <span style="cursor: pointer" onclick="calculate(this)"> = </span>
+      <span class="result"></span>
+    </p>
+
+    <p class="number">
+      <span class="number">10</span>
+      <span style="font-size: 16px; vertical-align: super" class="power">2</span>
+      <span style="cursor: pointer" onclick="calculate(this)"> = </span>
+      <span class="result"></span>
+    </p>
     <script src="./src/main.js"></script>
   </body>
 </html>
