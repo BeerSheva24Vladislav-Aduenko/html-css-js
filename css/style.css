@@ -1,3 +1,27 @@
-.number{
-    font-size: 25px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vmin;
+  height: 90vmin;
+  /* width: 800px; 
+  height: 800px; */
+  border: 2px solid #000;
+}
+
+.cell {
+  width: calc(100% / 8);
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
 }
