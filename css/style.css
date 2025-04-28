@@ -2,26 +2,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90vmin;
-  height: 90vmin;
-  /* width: 800px; 
-  height: 800px; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   border: 2px solid #000;
 }
 
 .cell {
-  width: calc(100% / 8);
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
 }
 
-.white {
-  background-color: #fff;
-}
 
-.black {
+.cell:nth-child(16n + 2),
+.cell:nth-child(16n + 4),
+.cell:nth-child(16n + 6),
+.cell:nth-child(16n + 8),
+.cell:nth-child(16n + 9),
+.cell:nth-child(16n + 11),
+.cell:nth-child(16n + 13),
+.cell:nth-child(16n + 15) {
   background-color: #000;
 }
